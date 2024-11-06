@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera de Cine</title>
+    <style>
+        body {
+            background-color: #202020;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #f8b400;
+        }
+        .movie-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .movie {
+            width: 300px;
+            margin: 20px;
+            background-color: #444;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .movie img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .movie h2 {
+            font-size: 1.5em;
+            color: #f8b400;
+        }
+        .movie p {
+            color: #cccccc;
+        }
+        .movie a {
+            color: #4ecdc4;
+            text-decoration: none;
+        }
+        .movie a:hover {
+            color: #f8b400;
+        }
+        .trailer {
+            width: 100%;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Cartelera de Cine</h1>
+        <p>¡Descubre las películas más esperadas del momento!</p>
+    </div>
+
+    <div class="movie-section">
+        
+        <div class="movie">
+            <h2>The Batman</h2>
+            <img src="the-batman-keyart.jpg" alt="Póster de Aventura Espacial">
+            <p>Batman explora la corrupción existente en la ciudad de Gotham y el vínculo de esta con su propia familia. Además, entra en conflicto con un asesino en serie conocido como "el Acertijo".</p>
+            <a href="https://es.wikipedia.org/wiki/The_Batman_(película)" target="_blank">Más información</a>
+            <br><br>
+            <video class="trailer" controls>
+                <source src="The Batman - DC FanDome Teaser.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </div>
+        <div class="movie">
+            <h2>Constantine</h2>
+            <img src="Constantine-696456521-mmed.jpg" alt="Póster de Misterio en la Ciudad">
+            <p>Un hombre que puede ver demonios ayuda a una mujer policía escéptica a investigar la misteriosa muerte de su hermana gemela.</p>
+            <a href="https://es.wikipedia.org/wiki/Constantine_(película)" target="_blank">Más información</a>
+            <br><br>
+            <video class="trailer" controls>
+                <source src="CONSTANTINE (Trailer español) - TERRORLAND (240p, h264, youtube).mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </div>
+        <div class="movie">
+            <h2>Son como niños.</h2>
+            <img src="Gups.WEBP" alt="Póster de Comedia en Familia">
+            <p>Un grupo de amigos y excompañeros descubren que envejecer no siempre significa madurar cuando se reúnen para honrar la memoria de su entrenador de baloncesto.</p>
+            <a href="https://es.wikipedia.org/wiki/Grown_Ups" target="_blank">Más información</a>
+            <br><br>
+            <video class="trailer" controls>
+                <source src="Son como Niños Tráiler en HD - SonyPicturesLatam (240p, h264, youtube).mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </div>
+
+    </div>
+
+</body>
+</html>
